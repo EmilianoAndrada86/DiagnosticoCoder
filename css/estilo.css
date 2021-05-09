@@ -90,7 +90,8 @@ footer {
   display: inline-block; }
 
 .sedes {
-  background-image: linear-gradient(#2178a2, white); }
+  background-image: linear-gradient(#2178a2, white);
+  font-family: 'Noto Serif TC', serif; }
   .sedes__titulo {
     color: white;
     text-align: center; }
@@ -141,7 +142,8 @@ footer {
   background-image: linear-gradient(#2178a2, white);
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Noto Serif TC', serif; }
 
 #video {
   width: 100%;
@@ -179,7 +181,11 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .header__top__redes__imagen {
-    width: 10% !important; } }
+    width: 10% !important; }
+  .equipos {
+    width: 100% !important; }
+  #carrouselEquipo {
+    width: 100%; } }
 
 .carousel-inner {
   height: auto; }
