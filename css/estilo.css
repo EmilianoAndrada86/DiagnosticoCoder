@@ -75,18 +75,27 @@ footer {
   display: inline-block; }
 
 .sedes {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   background-image: linear-gradient(#2178a2, white); }
-  .sedes__detalle {
+  .sedes__contenedorSedes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 5%; }
-    .sedes__detalle__card {
-      overflow: hidden;
-      width: 300px;
-      height: auto; }
+    width: 100%;
+    justify-content: space-between; }
+    .sedes__contenedorSedes__aSede {
+      margin: 10px 10px; }
+      .sedes__contenedorSedes__aSede__sede {
+        width: 100%;
+        position: relative; }
+        .sedes__contenedorSedes__aSede__sede__top {
+          background: rgba(120, 126, 137, 0.5);
+          color: white;
+          font-size: 1em;
+          padding: 5px 0px;
+          position: absolute;
+          width: 100%;
+          height: 10%; }
+        .sedes__contenedorSedes__aSede__sede__direccion {
+          color: gray; }
 
 .servicios {
   background-image: linear-gradient(#2178a2, white);
