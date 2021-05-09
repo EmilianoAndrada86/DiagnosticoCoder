@@ -1,3 +1,6 @@
+p {
+  color: white; }
+
 .navbar {
   padding-top: 0px;
   padding-bottom: 0px; }
@@ -13,7 +16,7 @@ header {
   display: flex;
   flex-direction: column; }
   header .header__top {
-    background-color: #6c737a;
+    background-color: #787e89;
     display: grid;
     grid-template-areas: "redes telefono";
     grid-template-columns: 1fr 1fr;
@@ -63,7 +66,19 @@ section {
 footer {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  border: 0px 0px 0px 0px; }
+  border: 0px 0px 0px 0px;
+  background-image: linear-gradient(white, #2178a2);
+  width: 100%; }
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorFooter__imagen {
+    width: 25%;
+    height: 25%; }
+  .contenedorFooter__texto {
+    color: white; }
 
 #itemNav {
   justify-content: space-around; }
@@ -76,6 +91,11 @@ footer {
 
 .sedes {
   background-image: linear-gradient(#2178a2, white); }
+  .sedes__titulo {
+    color: white;
+    text-align: center; }
+  .sedes__descripcion {
+    text-align: center; }
   .sedes__contenedorSedes {
     display: flex;
     flex-direction: row;
@@ -93,9 +113,10 @@ footer {
           padding: 5px 0px;
           position: absolute;
           width: 100%;
-          height: 10%; }
+          height: 10%;
+          text-align: center; }
         .sedes__contenedorSedes__aSede__sede__direccion {
-          color: gray; }
+          color: gray !important; }
 
 .servicios {
   background-image: linear-gradient(#2178a2, white);
@@ -107,11 +128,14 @@ footer {
   .servicios__titulo {
     align-self: center; }
   .servicios__tipos__laboratorio__titulo {
-    color: #3f0000; }
+    color: white;
+    text-align: center; }
   .servicios__tipos__diagnosticoImagenes__titulo {
-    color: #6b6b6b; }
+    color: white;
+    text-align: center; }
   .servicios__tipos__diagnosticoMedicos__titulo {
-    color: #25b102; }
+    color: white;
+    text-align: center; }
 
 .equipos {
   background-image: linear-gradient(#2178a2, white);
@@ -130,7 +154,7 @@ footer {
   .carousel-inner .carouselImg {
     height: 900px; }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
   .header__top__redes__imagen {
     width: 50% !important;
     height: auto !important; }
@@ -139,4 +163,27 @@ footer {
     font-size: small !important; }
   #itemNav {
     font-size: smaller  !important;
-    flex-direction: column  !important; } }
+    flex-direction: column  !important; }
+  .sedes__contenedorSedes {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .contenedorFooter__imagen {
+    width: 50% !important; }
+  .carousel-inner {
+    height: auto; }
+    .carousel-inner carousel-item {
+      height: 300px !important; }
+    .carousel-inner .carouselImg {
+      height: 300px !important; } }
+
+@media only screen and (max-width: 768px) {
+  .header__top__redes__imagen {
+    width: 10% !important; } }
+
+.carousel-inner {
+  height: auto; }
+  .carousel-inner carousel-item {
+    height: 600px; }
+  .carousel-inner .carouselImg {
+    height: 600px; }
